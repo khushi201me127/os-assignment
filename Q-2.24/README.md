@@ -24,7 +24,7 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 ## Screenshots
 - Running the program 
 
-![App Screenshot]()
+![App Screenshot](https://github.com/khushi201me127/os-assignment/blob/main/Q-2.24/screenshots/pic1.PNG)
 
 ---
 
@@ -36,9 +36,10 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 ## Screenshots
 - Running the strace command to trace the system calls
 
-[View the strace_log file]()
+[View the strace_log file](https://github.com/khushi201me127/os-assignment/blob/main/Q-2.24/strace%20log%20file/strace_log)
 
-![App Screenshot]()
+![App Screenshot](https://github.com/khushi201me127/os-assignment/blob/main/Q-2.24/screenshots/pic2.PNG)
+![App Screenshot](https://github.com/khushi201me127/os-assignment/blob/main/Q-2.24/screenshots/pic3.PNG)
 
 
 ---
