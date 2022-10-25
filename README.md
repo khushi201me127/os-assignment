@@ -7,7 +7,7 @@ System Concepts by Abraham Silberschatz, Peter Baer Galvin and Greg Gagne.
 
 
 ## Questions
-**[Question 1: Chapter 2- 2.24](--)**
+**[Question 1: Chapter 2- 2.24](https://github.com/khushi201me127/os-assignment/tree/main/Q-2.24)**
 
 In Section 2.3, we described a program that copies the contents of one file
 to a destination file. This program works by first prompting the user for
@@ -31,7 +31,7 @@ sudo dtruss ./FileCopy**
 Since Windows systems do not provide such a tool, you will have to
 trace through the Windows version of this program using a debugger.
 
-**[Question 2: Chapter 4- 4.22](--)**
+**[Question 2: Chapter 4- 4.22](https://github.com/khushi201me127/os-assignment/tree/main/Q-4.22)**
 
 Write a multithreaded program that calculates various statistical values
 for a list of numbers. This program will be passed a series of numbers
