@@ -4,6 +4,62 @@
 Note: All the information written below is specific to Ubuntu operating system
 
 ---
+### The C Program: [**answer.c**](https://github.com/khushi201me127/os-assignment/blob/main/Q-2.24/answer.c)
+
+Prompting the user for the name of the source file:
+```
+char ch, source_file[20], target_file[20];
+FILE *source, *target;
+printf("Enter name of the source file : ");
+scanf("%s", source_file);
+```
+
+Here we define 2 pointers to FILE type and they will be assigned the address of a file descriptor, that is, an area of memory that will be associated with an input or output stream.
+
+Opening Source File for Reading
+Including all necessary error checking, ensuring that the source file exists:
+```
+// Open one file for reading
+source = fopen(source_file, "r");
+if (source == NULL)
+{
+    printf("Cannot open file %s \n", source_file);
+    exit(0);
+}
+```
+Prompting the user for the name of the destination file:
+```
+printf("Enter name of the destination file : ");
+scanf("%s",target_file);
+```
+
+Opening Destination File for Writing
+Including all necessary error checking, ensuring that the destination file exists:
+```
+// Open another file for writing
+target = fopen(target_file, "w");
+
+if (target == NULL)
+{
+   fclose(source);
+   printf("Cannot open file %s \n", target_file);
+   exit(0);
+}
+```
+
+Reading Content from Source File and Pasting it into Destination file.
+```
+// Read contents from file
+while ((ch = fgetc(source)) != EOF)
+      fputc(ch, target);
+```
+Closing the file pointers:
+```
+printf("File copied successfully.\n");
+
+fclose(source);
+fclose(target);
+```
 
 ## Requirements
 
