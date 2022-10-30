@@ -13,8 +13,8 @@ int main()
 
    if (source == NULL)
    {
-      printf("Press any key to exit...\n");
-      exit(EXIT_FAILURE);
+      printf("Cannot open file %s \n", source_file);
+      exit(0);
    }
 
    printf("Enter name of the destination file : ");
@@ -25,8 +25,8 @@ int main()
    if (target == NULL)
    {
       fclose(source);
-      printf("Press any key to exit...\n");
-      exit(EXIT_FAILURE);
+      printf("Cannot open file %s \n", target_file);
+      exit(0);
    }
 
    while ((ch = fgetc(source)) != EOF)
