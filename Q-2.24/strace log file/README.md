@@ -101,7 +101,7 @@ In the above 4 close() statements:
 * close() returns 0 on success and -1 on error
 * int fd is the file descriptor which is to be closed.
 > 3 was the file descriptor of "/etc/ld.so.cache" , "/lib/x86_64-linux-gnu/libc.so.6" , "sample.txt" and 4 was the file descriptor of "output.txt".
-Refer [4. openat()](https://github.com/khushi201me127/os-assignment/edit/main/Q-2.24/strace%20log%20file#4-openat)
+Refer 4. openat()
 
 ### 6. **newfstatat():** 
 ```
@@ -145,9 +145,9 @@ In the above 6 newfsatat() statements:
 * newfstatat() returns 0 on success and -1 on error.
 * flags can either be 0 or include one or more of the following
   flags ORed:
-   o  AT_EMPTY_PATH (pathname is an empty string ,operate on a file reffered to by dirfd.
-   o  AT_NO_AUTOMOUNT
-   o  AT_SYMLINK_NOFOLLOW
+    * AT_EMPTY_PATH (pathname is an empty string ,operate on a file reffered to by dirfd.
+    * AT_NO_AUTOMOUNT
+    * AT_SYMLINK_NOFOLLOW
       
 ### 7. **mmap():** 
 ```
